@@ -44,23 +44,24 @@ const data = {
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
-      url: "/contact",
+
+      title: "Products",
+      url: "/about",
       icon: IconListDetails,
     },
     {
-      title: "Analytics",
-      url: "/about",
+      title: "My Contact",
+      url: "/contact",
       icon: IconChartBar,
     },
+    // {
+    // //   title: "Save Products",
+    // //   url: "/savat",
+    // //   icon: IconFolder,
+    // // },
     {
-      title: "Projects",
-      url: "#",
-      icon: IconFolder,
-    },
-    {
-      title: "Team",
-      url: "#",
+      title: "WishList",
+      url: "/seved-product",
       icon: IconUsers,
     },
   ],
@@ -167,11 +168,11 @@ export function AppSidebar({
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        {/* <NavDocuments items={data.documents} /> */}
+        {/* <NavSecondary items ={data.navSecondary} className="mt-auto" /> */}
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        {/* <NavUser user={data.user} /> */}
       </SidebarFooter>
     </Sidebar>
   );

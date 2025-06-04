@@ -11,6 +11,7 @@ import Contact from "./root/pages/Contact";
 import "./index.css"
 import ProtectedRoutes from "./root/protected-routes";
 import ProductSlug from "./root/pages/slug";
+import { SeveProduct } from "./root/pages/seveProduct";
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
           <Route element={<RootLayout />}>
             <Route index path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="product/:slug" element={<ProductSlug />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/seved-product" element={<SeveProduct />} />
           </Route>
 
         </Route>
@@ -32,7 +35,6 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Route>
 
-        <Route path="product/:slug" element={<ProductSlug />} />
         <Route
           path="*"
           element={

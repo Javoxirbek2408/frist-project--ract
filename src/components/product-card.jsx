@@ -7,10 +7,9 @@ const ProductCard = ({ product }) => {
         <Card className='p-4'>
             <img className='rounded-[8px] h-[200px] w-full object-cover' src={product.images[0]} alt="rasm" />
             <Link to={`/product/${product.slug}`} >
-                <CardTitle>{product.title}</CardTitle>
+                <CardTitle className={'hover:text-gray-400'} >{product.title}</CardTitle>
             </Link>
             <CardDescription className='line-clamp-3'>{product.description}</CardDescription>
-            <button className='bg-black text-white rounded-md'>save</button>
         </Card>
     )
 }
